@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XO Arena – Tic-Tac-Toe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1><span class="x">X</span>O <span class="o">Arena</span></h1>
+  <p class="subtitle">Tic · Tac · Toe</p>
+
+  <!-- MODE SELECTOR -->
+  <div class="mode-bar">
+    <button class="mode-btn active" id="m2p"   data-mode="2p">👥 2 Players</button>
+    <button class="mode-btn"        id="measy" data-mode="easy">🤖 Easy AI</button>
+    <button class="mode-btn"        id="mhard" data-mode="hard">🧠 Hard AI</button>
+  </div>
+
+  <!-- SCOREBOARD -->
+  <div class="scoreboard">
+    <div class="score-card x-card active-turn" id="xcardEl">
+      <div class="score-label">Player</div>
+      <div class="score-name">X</div>
+      <div class="score-num" id="scoreX">0</div>
+    </div>
+    <div class="score-card draw-card" id="dcardEl">
+      <div class="score-label">Draws</div>
+      <div class="score-name">–</div>
+      <div class="score-num" id="scoreDraw">0</div>
+    </div>
+    <div class="score-card o-card" id="ocardEl">
+      <div class="score-label" id="oLabel">Player</div>
+      <div class="score-name">O</div>
+      <div class="score-num" id="scoreO">0</div>
+    </div>
+  </div>
+
+  <!-- STATUS -->
+  <div class="status x-turn" id="status">X's Turn</div>
+
+  <!-- BOARD -->
+  <div class="board" id="board">
+    <div class="cell" data-index="0"><span class="mark" id="c0"></span></div>
+    <div class="cell" data-index="1"><span class="mark" id="c1"></span></div>
+    <div class="cell" data-index="2"><span class="mark" id="c2"></span></div>
+    <div class="cell" data-index="3"><span class="mark" id="c3"></span></div>
+    <div class="cell" data-index="4"><span class="mark" id="c4"></span></div>
+    <div class="cell" data-index="5"><span class="mark" id="c5"></span></div>
+    <div class="cell" data-index="6"><span class="mark" id="c6"></span></div>
+    <div class="cell" data-index="7"><span class="mark" id="c7"></span></div>
+    <div class="cell" data-index="8"><span class="mark" id="c8"></span></div>
+  </div>
+
+  <button class="new-game-btn" id="newGameBtn">New Game</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
